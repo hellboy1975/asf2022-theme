@@ -68,7 +68,7 @@ portals:
             heading: 'ASF'
             teaser: 'Australian Speleological Federation'
         -
-            thumbnail: person.png
+            thumbnail: fussi.png
             alt: 'FUSSI'
             target: 'https://fussi.caves.org.au/'
             heading: 'FUSSI'
