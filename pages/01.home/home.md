@@ -58,33 +58,33 @@ notices:
             heading: 'Fusce ultrices fringilla'
             point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
 portals:
-    heading: 'Cras vitae metus aliNuam'
-    byline: 'pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
+    heading: 'Secrets of the Nullarbor'
+    byline: 'Organised by the SA Speleo Council'
     items:
         -
             thumbnail: person.png
-            alt: 'Molly Millions'
-            target: '#'
-            heading: 'Molly Millions'
-            teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            alt: 'ASF'
+            target: 'https://www.caves.org.au/'
+            heading: 'ASF'
+            teaser: 'Australian Speleological Federation'
         -
             thumbnail: person.png
-            alt: 'Henry Dorsett Case'
-            target: '#'
-            heading: 'Henry Dorsett Case'
-            teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            alt: 'FUSSI'
+            target: 'https://fussi.caves.org.au/'
+            heading: 'FUSSI'
+            teaser: 'Flinders University Speleological Society Incorporated'
         -
             thumbnail: person.png
-            alt: 'Willis Corto'
-            target: '#'
-            heading: 'Willis Corto'
-            teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            alt: 'CEGSA'
+            target: 'https://www.cegsa.org.au/'
+            heading: 'CEGSA'
+            teaser: 'Cave Exploration Group of South Australia'
         -
             thumbnail: person.png
-            alt: 'Linda Lee'
+            alt: 'SCG'
             target: '#'
-            heading: 'Linda Lee'
-            teaser: 'In posuere eleifend odio quisque semper augue wisi ligula.'
+            heading: 'SCG'
+            teaser: 'Scout Caving Group of South Australia'
 ---
 
 ### Suspendisse dictum porta
