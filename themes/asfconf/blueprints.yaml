@@ -1,0 +1,14 @@
+name: ASF Conference
+version: 0.1.0
+description: Sub-themed version of Solariz
+icon: rebel
+author:
+  name: Matt Smith
+  email: hellboy1975@gmail.com
+homepage: https://github.com/hughbris/grav-theme-solarize
+demo: https://behold.metamotive.co.nz/solarize
+keywords: grav, theme, templated, green
+bugs: https://github.com/hughbris/grav-theme-solarize/issues
+readme: https://github.com/hughbris/grav-theme-solarize/blob/develop/README.md
+docs: https://github.com/hughbris/grav-theme-solarize/blob/develop/README.md
+license: MIT
