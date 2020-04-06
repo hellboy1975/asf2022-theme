@@ -12,11 +12,11 @@ hook:
         text: 'Register Now'
         target: '#'
 cta:
-    headline: 'Cras vitae metus aliNuam'
-    copy: 'Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
+    headline: 'International Year of Karst and Caves'
+    copy: 'In 2021 we celebrate the International Year of Karst and Caves. Caves and karst occur around our planet but few people understand the great value of caves to humanity. Fewer still know what karst is.'
     button:
-        text: 'Nulla aluctus eleifend'
-        target: '#'
+        text: 'Learn more'
+        target: 'http://iyck2021.org/'
 notices:
     heading: 'Cras vitae metus aliNuam'
     byline: 'pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
@@ -62,7 +62,7 @@ portals:
     byline: 'Organised by the SA Speleo Council'
     items:
         -
-            thumbnail: person.png
+            thumbnail: asf.png
             alt: 'ASF'
             target: 'https://www.caves.org.au/'
             heading: 'ASF'
