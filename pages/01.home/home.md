@@ -1,15 +1,15 @@
 ---
 title: Home
 body_classes: 'title-center title-h1h2'
-banner:
+banner_hide:
     headline: 'Secrets of the Nullarbor'
-    follower: 'Presented by the ASF and the SA Speleo Council'
+    follower: ''
     blurb: 'A 5-day caving conference held in Ceduna, and with field trips to the Nullarbor'
 hook:
-    teaser: 'Pellentesque viverra vulputate enim. Aliquam volutpat. Pellentesque tristique Risus'
-    byline: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Donec pulvinar ullamcorper metus.'
+    teaser: 'In 2021 the biennial ASF Conference will be held in Ceduna, South Australia'
+    byline: 'Join us for 5 days of speleological fun during a conference which will focus on Australias largest karst - the Nullarbor Plains'
     button:
-        text: 'This is a test'
+        text: 'Register Now'
         target: '#'
 cta:
     headline: 'Cras vitae metus aliNuam'
@@ -87,9 +87,7 @@ portals:
             teaser: 'Scout Caving Group of South Australia'
 ---
 
-### Suspendisse dictum porta
+### Register for more information
 
-Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Vestibulum imperdiet, magna nec eleifend semper augue mattis wisi maecenas ligula nunc lectus vestibulum euismod lacinia quam nisl.    
----
-# Say Hello to Grav!
-## installation successful...
+The Secrets of the Nullarbor conference is still in the planning phase, however you can register your interest for the conference using the button below.  We look forward
+to sharing more information on the event soon!
