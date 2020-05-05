@@ -1,8 +1,8 @@
 {% set body_classes = header.body_classes %}
 <!DOCTYPE HTML>
 <!--
-	Solarize by TEMPLATED
-	templated.co @templatedco
+	ASF 2021 Grav theme  by hellboy1975
+	Based on the Solarized theme (thanks!)
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
@@ -40,6 +40,7 @@
 		{% do assets.addJs('theme://js/skel.min.js') %}
 		{% do assets.addJs('theme://js/skel-layers.min.js') %}
 		{% do assets.addJs('theme://js/init.js', {'group': 'init', 'data-theme-root': theme_url} ) %}
+		{% do assets.addJs('theme://js/lightslider.min.js') %}
 	{% endblock %}
 
 	{% block stylesheets %}
@@ -50,6 +51,7 @@
 
 		{% do assets.addCss('theme://css/skel.css', {'group': 'noscript'}) %}
 		{% do assets.addCss('theme://css/style.css', {'group': 'noscript'}) %}
+		{% do assets.addCss('theme://css/lightslider.css', {'group': 'noscript'}) %}
 		{% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
 			{# do assets.addCss('theme://css/ie/v8.css', {'group', 'ie'}) #}
 			{% do assets.addCss('theme://css/ie/v8.css') %}
