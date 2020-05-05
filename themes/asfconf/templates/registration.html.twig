@@ -1,0 +1,132 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block body %}
+<!-- Main -->
+	<div id="main" class="wrapper style4 plain">
+
+		<!-- Content -->
+		<div id="content" class="container">
+			<section>
+				{% include 'partials/heading.html.twig' %}
+				{{ page.content }}
+			</section>
+
+			<script language="Javascript" type="text/javascript">
+
+				function checkform() {
+					for (i = 0; i < fieldstocheck.length; i++) {
+						if (eval("document.subscribeform.elements['" + fieldstocheck[i] + "'].type") == "checkbox") {
+							if (document.subscribeform.elements[fieldstocheck[i]].checked) {
+							} else {
+								alert("Please enter your " + fieldnames[i]);
+								eval("document.subscribeform.elements['" + fieldstocheck[i] + "'].focus()");
+
+								return false;
+							}
+						} else {
+							if (eval("document.subscribeform.elements['" + fieldstocheck[i] + "'].value") == "") {
+								alert("Please enter your " + fieldnames[i]);
+								eval("document.subscribeform.elements['" + fieldstocheck[i] + "'].focus()");
+
+								return false;
+							}
+						}
+					}
+					for (i = 0; i < groupstocheck.length; i++) {
+						if (!checkGroup(groupstocheck[i], groupnames[i])) {
+							return false;
+						}
+					}
+
+					if (!compareEmail()) {
+						alert("Email addresses you entered do not match");
+
+						return false;
+					}
+
+					return true;
+				}
+
+				var fieldstocheck = new Array();
+				var fieldnames = new Array();
+				function addFieldToCheck(value, name) {
+					fieldstocheck[fieldstocheck.length] = value;
+					fieldnames[fieldnames.length] = name;
+				}
+				var groupstocheck = new Array();
+				var groupnames = new Array();
+				function addGroupToCheck(value, name) {
+					groupstocheck[groupstocheck.length] = value;
+					groupnames[groupnames.length] = name;
+				}
+
+				function compareEmail() {
+					return (document.subscribeform.elements["email"].value == document.subscribeform.elements["emailconfirm"].value);
+				}
+				function checkGroup(name, value) {
+					option = -1;
+					for (i = 0; i < document.subscribeform.elements[name].length; i++) {
+						if (document.subscribeform.elements[name][i].checked) {
+							option = i;
+						}
+					}
+					if (option == -1) {
+						alert("Please enter your " + value);
+
+						return false;
+					}
+
+					return true;
+				}
+
+			</script>
+			<form method="post" action="https://speleorovers.org/asflist/?p=subscribe&id=1" name="signup" >
+				<table border=0>
+					<tr>
+						<td>
+							<div class="required">Email address</div>
+						</td>
+						<td class="attributeinput"><input type=text name=email value="" size="40" />
+							<script language="Javascript" type="text/javascript">addFieldToCheck("email", "Email address");</script>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="required">Confirm your email address</div>
+						</td>
+						<td class="attributeinput"><input type=text name=emailconfirm value="" size="40" />
+							<script language="Javascript"
+								type="text/javascript">addFieldToCheck("emailconfirm", "Confirm your email address");</script>
+						</td>
+					</tr><input type="hidden" name="htmlemail" value="1" />
+			
+					<tr>
+						<td>
+							<div class="required">Name</div>
+						</td>
+						<td class="attributeinput">
+							<input type="text" name="attribute1" class="attributeinput" size="40" value="" />
+							<script language="Javascript" type="text/javascript">addFieldToCheck("attribute1", "Name");</script>
+						</td>
+					</tr>
+				</table><input type="hidden" name="list[3]" value="signup" /><input type="hidden" name="listname[1]"
+					value="newsletter" />
+				<div style="display:none"><input type="text" name="VerificationCodeX" value="" size="20"></div>
+				<p><input type=submit name="subscribe" value="Subscribe to Conference Newsletter" onClick="return checkform();">
+				</p>
+			</form>
+
+			<!-- <form method="post" action="http://yourdomain.com/?p=subscribe&id=1" name="subscribeform">
+				Email:<input type="text" name="email" value=""><br>
+				<script language="Javascript" type="text/javascript">addFieldToCheck("email", "Email Address");</script>
+				Name: <input type="text" name="name" value="">
+				<script language="Javascript" type="text/javascript">addFieldToCheck("name", "Name");</script>
+				<input type="hidden" name="list[1]" value="signup" />
+				<input type="submit" name="subscribe" value="Subscribe" onClick="return checkform();">
+			</form> -->
+		</div>
+	</div>
+
+	{% include 'partials/sections/portals.html.twig' with { 'data_source': page.find('/') } %}
+
+{% endblock body %}
