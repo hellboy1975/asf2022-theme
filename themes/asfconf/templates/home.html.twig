@@ -6,28 +6,7 @@
 
 {% block body %}
 
-	<ul id="lightSlider">
-		<li>
-			<img src="image-1.jpg">
-		</li>
-		<li>
-			<img src="image-2.jpg">
-		</li>
-	</ul>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#lightSlider').lightSlider({
-				// adaptiveHeight:true,
-				autoWidth:true,
-				item:1,
-				slideMargin:0,
-				loop:true,
-				auto:true,
-				pager:false
-			});
-		});
-	</script>
+	{% include 'partials/sections/slider.html.twig' %}
 
 	{% include 'partials/sections/hook.html.twig' with { text_copy: page.content } %}
 	{% include 'partials/sections/cta.html.twig' %}

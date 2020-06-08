@@ -1,0 +1,57 @@
+{% set data_source = data_source|default(page) %}
+{% if data_source.header.portals %}
+<!-- Team aka 'portals' (CSS and frontmatter) -->
+{% set portals = data_source.header.portals %}
+<section id="home_slider" class="container">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="image-1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="image-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="image-3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="image-4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="image-5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="image-6.jpg" style="width:100%">
+        </div>
+
+        <!-- <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="image-6.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div> -->
+    
+    </div>
+    <br>
+
+    <script type="text/javascript">
+    var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        } 
+    </script>
+</section>
+{% endif %}
