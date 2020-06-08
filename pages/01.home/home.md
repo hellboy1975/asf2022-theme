@@ -10,7 +10,7 @@ hook:
     byline: 'Join us for 5 days of speleological fun during a conference which will focus on Australias largest karst - the Nullarbor Plains'
     button:
         text: 'Register Now'
-        target: 'register'
+        target: register
 cta:
     headline: 'International Year of Karst and Caves'
     copy: 'In 2021 we celebrate the International Year of Karst and Caves. Caves and karst occur around our planet but few people understand the great value of caves to humanity. Fewer still know what karst is.'
@@ -18,44 +18,44 @@ cta:
         text: 'Learn more'
         target: 'http://iyck2021.org/'
 notices:
-    heading: 'Cras vitae metus aliNuam'
-    byline: 'pulvinar mollis. Vestibulum sem magna, elementum vestibulum arcu.'
+    heading: 'Things to do at the conference'
+    byline: 'To be completed!'
     items:
         -
             icon: cogs
-            heading: 'Nulla luctus eleifend'
+            heading: Caving
             point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
         -
             icon: wrench
-            heading: 'Etiam posuere augue'
+            heading: Science
             point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
         -
             icon: leaf
-            heading: 'Fusce ultrices fringilla'
+            heading: Activities
             point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
         -
             icon: cogs
-            heading: 'Nulla luctus eleifend'
+            heading: Surveying
             point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
         -
             icon: wrench
-            heading: 'Etiam posuere augue'
+            heading: 'Speleo Sports'
             point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
         -
             icon: leaf
-            heading: 'Fusce ultrices fringilla'
+            heading: 'Photography Competition'
             point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
         -
             icon: cogs
-            heading: 'Nulla luctus eleifend'
+            heading: 'Other stuff'
             point: 'In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula pellentesque.'
         -
             icon: wrench
-            heading: 'Etiam posuere augue'
+            heading: 'More stuff'
             point: 'Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat liguala.'
         -
             icon: leaf
-            heading: 'Fusce ultrices fringilla'
+            heading: 'Even more stuff'
             point: 'Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor.'
 portals:
     heading: 'Secrets of the Nullarbor'
@@ -63,28 +63,28 @@ portals:
     items:
         -
             thumbnail: asf.png
-            alt: 'ASF'
+            alt: ASF
             target: 'https://www.caves.org.au/'
-            heading: 'ASF'
+            heading: ASF
             teaser: 'Australian Speleological Federation'
         -
             thumbnail: fussi.png
-            alt: 'FUSSI'
+            alt: FUSSI
             target: 'https://fussi.caves.org.au/'
-            heading: 'FUSSI'
+            heading: FUSSI
             teaser: 'Flinders University Speleological Society Incorporated'
         -
-            thumbnail: person.png
-            alt: 'CEGSA'
+            thumbnail: cegsa.png
+            alt: CEGSA
             target: 'https://www.cegsa.org.au/'
-            heading: 'CEGSA'
+            heading: CEGSA
             teaser: 'Cave Exploration Group of South Australia'
         -
-            thumbnail: person.png
-            alt: 'SCG'
+            thumbnail: scg.png
+            alt: SCG
             target: '#'
-            heading: 'SCG'
-            teaser: 'Scout Caving Group of South Australia'            
+            heading: SCG
+            teaser: 'Scout Caving Group of South Australia'
 ---
 
 ### Register for more information
