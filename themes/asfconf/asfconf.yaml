@@ -8,4 +8,4 @@ streams:
      prefixes:
        '':
          - user/themes/asfconf
-         - user/themes/solarize`
+         - user/themes/solarize
